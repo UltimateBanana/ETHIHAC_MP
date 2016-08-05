@@ -1,29 +1,28 @@
 package driver;
 
-import java.awt.EventQueue;
+import java.util.ArrayList;
 
-import view.MainGUI;
+import model.InputFileReader;
+import model.User;
+import model.UserHandler;
 
-public class Driver {
-
-	public static void main(String[] args) 
+public class Driver
+{
+	public static void main(String[] args)
 	{
+		ArrayList<String> worstPasswords = InputFileReader.read("500-worst-passwords.txt");
+		ArrayList<String> usernames = InputFileReader.read("passwd.txt");
+		ArrayList<String> passwords = InputFileReader.read("shadow.txt");
+		ArrayList<User> userAccounts = new ArrayList<>(0);
 		
-		
-		final String output = "BANANANA"; // output of the PasswordFinder
-		
-		EventQueue.invokeLater(new Runnable() 
+		for( int i = 0; i < usernames.size(); i++ )
 		{
-			public void run() 
-			{
-				try 
-				{
-					MainGUI window = new MainGUI(output);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
+			userAccounts.add(UserHandler.createUser(usernames.get(i), passwords.get(i)));
+		}
+		
+		for( int i = 0; i < userAccounts.size(); i++ )
+		{
+			System.out.println(userAccounts.get(i));
+		}
 	}
-
 }
