@@ -2,6 +2,10 @@ UserID   : 65534
 Username : nobody 
 Password : Password Not Found 
 
+UserID   : 1000 
+Username : administrator 
+Password : Password Not Found 
+
 UserID   : 1001 
 Username : optimus 
 Password : zzzzzz 

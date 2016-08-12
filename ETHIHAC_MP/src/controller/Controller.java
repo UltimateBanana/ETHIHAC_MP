@@ -48,7 +48,7 @@ public class Controller
 		
 		for( int i = 0; i < userAccounts.size(); i++ )
 		{
-			if( userAccounts.get(i).getUserId() > 1000  )
+			if( userAccounts.get(i).getUserId() >= 1000  )
 			{
 				if( userAccounts.get(i).getPassword() == null )
 				{
