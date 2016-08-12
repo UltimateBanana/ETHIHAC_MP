@@ -6,17 +6,17 @@ Cracking Time : 0 ms
 UserID        : 1000 
 Username      : administrator 
 Password      : Password Not Found 
-Cracking Time : 2794 ms
+Cracking Time : 2397 ms
 
 UserID        : 1001 
 Username      : optimus 
 Password      : zzzzzz 
-Cracking Time : 1154 ms
+Cracking Time : 1126 ms
 
 UserID        : 1002 
 Username      : megatron 
 Password      : juice 
-Cracking Time : 2275 ms
+Cracking Time : 2374 ms
 
 UserID        : 1003 
 Username      : bumblebee 

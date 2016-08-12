@@ -70,6 +70,14 @@ public class Controller
 		OutputWriter.write(accounts);
 	}
 	
+	public void reset()
+	{
+		usernames = new ArrayList<>(0);
+		passwords = new ArrayList<>(0);
+		worstPasswords = new ArrayList<>(0);
+		userAccounts = new ArrayList<>(0);
+	}
+	
 	private void assembleUserAccounts()
 	{
 		for( int i = 0; i < usernames.size(); i++ )

@@ -198,6 +198,7 @@ public class MainGUI extends JFrame implements ActionListener
 			textFieldWorstPassword.setText("src/files/500-worst-passwords.txt");
 			labelExport.setVisible(false);
 			populateTable(null);
+			controller.reset();
 		}
 		else if( e.getSource() == buttonCrackPassword )
 		{
