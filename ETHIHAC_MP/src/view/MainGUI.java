@@ -197,6 +197,7 @@ public class MainGUI extends JFrame implements ActionListener
 			textFieldShadowPassword.setText("src/files/shadow.txt");
 			textFieldWorstPassword.setText("src/files/500-worst-passwords.txt");
 			labelExport.setVisible(false);
+			populateTable(null);
 		}
 		else if( e.getSource() == buttonCrackPassword )
 		{
