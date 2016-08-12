@@ -1,4 +1,7 @@
-package model;
+package handler;
+
+import model.HashingAlgorithm;
+import model.User;
 
 public class UserHandler
 {
@@ -19,7 +22,7 @@ public class UserHandler
 		else
 		{
 			hash = HashingAlgorithm.getHashingAlgorithm(passwordHash[1]);
-			salt = passwordHash[2];
+			salt = "$" + passwordHash[1] + "$" + passwordHash[2] + "$";
 			hashedPassword = passwordHash[3];
 		}
 		
@@ -27,7 +30,7 @@ public class UserHandler
 			           username[0], 
 			           hash, 
 			           salt, 
-			           hashedPassword, 
-			           "");
+			           password[1], 
+			           null);
 	}
 }

@@ -1,4 +1,4 @@
-package model;
+package reader;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -14,7 +14,7 @@ public class InputFileReader
 		
 		try
 		{
-			BufferedReader in = new BufferedReader(new FileReader("src/files/" + filename));
+			BufferedReader in = new BufferedReader(new FileReader(filename));
 			
 			String line = in.readLine();
 			while( line != null )
