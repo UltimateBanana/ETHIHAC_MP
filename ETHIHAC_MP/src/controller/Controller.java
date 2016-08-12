@@ -80,13 +80,14 @@ public class Controller
 	
 	private Object[][] convertTo2dObjectArray( ArrayList<User> crackedAccounts )
 	{
-		Object[][] rows = new Object[crackedAccounts.size()][3];
+		Object[][] rows = new Object[crackedAccounts.size()][4];
 		
 		for( int i = 0; i < crackedAccounts.size(); i++ )
 		{
 			rows[i][0] = crackedAccounts.get(i).getUserId();
 			rows[i][1] = crackedAccounts.get(i).getUsername();
 			rows[i][2] = crackedAccounts.get(i).getPassword();
+			rows[i][3] = crackedAccounts.get(i).getCrackingTime() + " ms";
 		}
 		
 		return rows;

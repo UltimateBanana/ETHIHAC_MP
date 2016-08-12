@@ -40,7 +40,7 @@ public class MainGUI extends JFrame implements ActionListener
 	private JTable tableOutput;
 	private JScrollPane scrollPaneOutput;
 	
-	String[] columns = {"UserID", "Username", "Password"};
+	String[] columns = {"UserID", "Username", "Password", "Cracking Time"};
 	
 	public MainGUI( Controller controller ) 
 	{

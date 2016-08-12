@@ -8,6 +8,7 @@ public class User
 	private String salt;
 	private String hashedPassword;
 	private String password;
+	private long crackingTime;
 	
 	public User(int userId, String username, HashingAlgorithm hashingAlgorithm, String salt, String hashedPassword, String password)
 	{
@@ -80,6 +81,16 @@ public class User
 		this.password = password;
 	}
 	
+	public long getCrackingTime()
+	{
+		return crackingTime;
+	}
+
+	public void setCrackingTime(long crackingTime)
+	{
+		this.crackingTime = crackingTime;
+	}
+
 	public String toString()
 	{
 		return userId + " : " + username + " : " + hashingAlgorithm.toString() + " : " + salt + " : " + hashedPassword + " : " + password;

@@ -1,20 +1,25 @@
-UserID   : 65534 
-Username : nobody 
-Password : Password Not Found 
+UserID        : 65534 
+Username      : nobody 
+Password      : Password Not Found 
+Cracking Time : 0 ms
 
-UserID   : 1000 
-Username : administrator 
-Password : Password Not Found 
+UserID        : 1000 
+Username      : administrator 
+Password      : Password Not Found 
+Cracking Time : 2794 ms
 
-UserID   : 1001 
-Username : optimus 
-Password : zzzzzz 
+UserID        : 1001 
+Username      : optimus 
+Password      : zzzzzz 
+Cracking Time : 1154 ms
 
-UserID   : 1002 
-Username : megatron 
-Password : juice 
+UserID        : 1002 
+Username      : megatron 
+Password      : juice 
+Cracking Time : 2275 ms
 
-UserID   : 1003 
-Username : bumblebee 
-Password : 123456 
+UserID        : 1003 
+Username      : bumblebee 
+Password      : 123456 
+Cracking Time : 4 ms
 

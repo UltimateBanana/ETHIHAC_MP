@@ -13,9 +13,13 @@ public class PasswordHandler
 	{
 		for( int i = 0; i < users.size(); i++ )
 		{
-			if( users.get(i).getUserId() > 1000 && users.get(i).getHashingAlgorithm() != HashingAlgorithm.Null )
+			if( users.get(i).getUserId() >= 1000 && users.get(i).getHashingAlgorithm() != HashingAlgorithm.Null )
 			{
+				long startTime = System.nanoTime();
 				users.get(i).setPassword(matchEncrypt(users.get(i).getSalt(), users.get(i).getHashedPassword(), passwords));
+				long endTime = System.nanoTime();
+				
+				users.get(i).setCrackingTime((endTime - startTime) / 1000000);
 			}
 		}
 	}

@@ -27,11 +27,13 @@ public class OutputWriter
 		{
 			try
 			{
-				bufferedWriter.write("UserID   : " + accounts.get(i).getUserId() + " ");
+				bufferedWriter.write("UserID        : " + accounts.get(i).getUserId() + " ");
 				bufferedWriter.newLine();
-				bufferedWriter.write("Username : " + accounts.get(i).getUsername() + " ");
+				bufferedWriter.write("Username      : " + accounts.get(i).getUsername() + " ");
 				bufferedWriter.newLine();
-				bufferedWriter.write("Password : " + accounts.get(i).getPassword() + " ");
+				bufferedWriter.write("Password      : " + accounts.get(i).getPassword() + " ");
+				bufferedWriter.newLine();
+				bufferedWriter.write("Cracking Time : " + accounts.get(i).getCrackingTime() + " ms");
 				bufferedWriter.newLine();
 				bufferedWriter.newLine();
 			}
